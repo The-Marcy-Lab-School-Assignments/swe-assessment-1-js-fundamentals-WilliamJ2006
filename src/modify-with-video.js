@@ -19,9 +19,6 @@
   - What you expected to happen
   - The bugs you found (what's wrong and why)
   - The fixes you implemented
-
-
-
   ADD YOUR LOOM LINK HERE: https://www.loom.com/share/1e96264fd3734e0283ca4b0ef8b06adf?sid=7826069f-13dd-4f36-b2c4-d778caecaea1
 */
 
@@ -52,17 +49,17 @@ const decreaseScore = (name) => {
   }
 }
 
-const resetAllScores = () => {
-  for (let i = 0; i < players.length; i++) {
-    let player = players[i];
-    resetSingleScore(player);
-  }
-}
-
 const resetSingleScore = (player) => {
   // score = 0;
   // not using argument
   player.score = 0;
+}
+
+const resetAllScores = () => {
+  for (let i = 0; i < players.length; i++) {
+    const player = players[i];
+    resetSingleScore(player);
+  }
 }
 
 const getTopScorer = () => {
