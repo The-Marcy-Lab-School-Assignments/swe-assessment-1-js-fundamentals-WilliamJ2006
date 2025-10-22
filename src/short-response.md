@@ -32,7 +32,7 @@ Calling the shoutout function run it's code that has theHustler as Paul while th
 ### Question 4
 The purpose of rest parameters are to take in an indefinite amount of arguments in the case where the number of arguments is unknown or can be any length.
 
-You can create a rest parameter by adding three dots before your parameter when delclaring a function ex. normal is (num), rest parameter is, (...num).
+You can create a rest parameter by adding three dots before your parameter when delclaring a function ex. normal is `(num)`, rest parameter is, `(...num)`.
 
 ```js
 const sum = (...nums) => {
