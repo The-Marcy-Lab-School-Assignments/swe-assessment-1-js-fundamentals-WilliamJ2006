@@ -20,7 +20,9 @@
   - The bugs you found (what's wrong and why)
   - The fixes you implemented
 
-  ADD YOUR LOOM LINK HERE: __________
+
+
+  ADD YOUR LOOM LINK HERE: https://www.loom.com/share/1e96264fd3734e0283ca4b0ef8b06adf?sid=7826069f-13dd-4f36-b2c4-d778caecaea1
 */
 
 const players = [
@@ -31,8 +33,12 @@ const players = [
 ];
 
 const increaseScore = (name) => {
-  for (let i = 0; i <= players.length; i++) {
-    if (players[i].name = name) {
+  // for (let i = 0; i <= players.length; i++) {
+  // arrays use index' and start at 0 so should be < not <=
+  for (let i = 0; i < players.length; i++) {
+    // if (players[i].name = name) {
+    // this is assigning not checking equality
+    if (players[i].name === name) {
       players[i].score += 1;
     }
   }
@@ -54,7 +60,9 @@ const resetAllScores = () => {
 }
 
 const resetSingleScore = (player) => {
-  score = 0;
+  // score = 0;
+  // not using argument
+  player.score = 0;
 }
 
 const getTopScorer = () => {
