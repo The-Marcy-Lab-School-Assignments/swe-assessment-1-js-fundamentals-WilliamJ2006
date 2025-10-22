@@ -17,6 +17,7 @@ Fixes are to either console.log in both the if and else statements, or delcare t
 ### Question 2
 The console.log would log `Michael Jordan`, because without using the spread operator,the reference of the objects memory is whats really being passed to the new variable, meaning modifying one will change the other.
 
+The spread operator `{...bestPlayer}` could be used here to create a copy of the object to prevent this issue.
 
 ### Question 3
 The function following code will log, 
