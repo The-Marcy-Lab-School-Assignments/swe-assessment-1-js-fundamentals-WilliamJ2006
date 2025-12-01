@@ -89,7 +89,7 @@ Javascript modules are a way to prevent code from working on a global scale or f
 
 You can export a function by using module.exports = function; at the end of a js file with functions in it. Replace function with the function name, if multiple functions want to be exported, use {} after the = and inside list every function with a comma to separate.
 
-To import, at the beginning of the js you want to import the function into, you declare all of the functions in {} if multiple , separated by commas, if you only want to import one just type the function name without {}. Once listed, type = require('./filename') with filename replaced with the name of the js file your exporting from. Require lets the computer know where these functions your exporting are from.
+To import it, at the beginning of the js you want to import the function into, you declare all of the functions in {} if multiple , separated by commas, if you only want to import one just type the function name without {}. Once listed, type = require('./filename') with filename replaced with the name of the js file your exporting from. Require lets the computer know where these functions your exporting are from.
 
 Examples:
 
